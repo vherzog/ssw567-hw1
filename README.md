@@ -16,7 +16,7 @@ python -m unittest -v
 
 ## Assumptions (Missing Requirements)
 * Input types can be type `int` or `float`.
-* Sides must equal a *valid* triangle.
+* If sides do not equal a valid triangle, output `NotATriangle`.
 * Output string should capitalize only the first letter.
 * If sides make a `right` triangle, function returns `"<type> and Right"`
 * If requirements are not met, function raises a `ValueError`.
