@@ -5,14 +5,18 @@ def validate_inputs(a, b, c):
     """Validates that inputs are integers.
 
     Args:
-      a: (int) Length of side a
-      b: (int) Length of side b
-      c: (int) Length of side c
+      a: Length of side a
+      b: Length of side b
+      c: Length of side c
 
      Returns:
-       (bool) True if all sides are integers, False if not.
+       (bool) True if all sides are integers and/or floats, False if not.
     """
-    if not (isinstance(a, int)) or not (isinstance(b, int)) or not (isinstance(c, int)):
+    if (
+        not ((isinstance(a, int)) or (isinstance(a, float)))
+        or not ((isinstance(b, int)) or (isinstance(b, float)))
+        or not ((isinstance(c, int)) or (isinstance(c, float)))
+    ):
         return False
     else:
         return True
@@ -22,9 +26,9 @@ def validate_triangle(a, b, c):
     """Validates that the side lengths make a triangle.
 
     Args:
-      a: (int) Length of side a
-      b: (int) Length of side b
-      c: (int) Length of side c
+      a: Length of side a
+      b: Length of side b
+      c: Length of side c
 
     Returns:
       (bool) True if valid triangle, False if invalid triangle.
@@ -40,9 +44,9 @@ def classify_triangle(a, b, c):
     side lengths.
 
     Args:
-      a: (int) Length of side a
-      b: (int) Length of side b
-      c: (int) Length of side c
+      a: Length of side a
+      b: Length of side b
+      c: Length of side c
 
     Returns:
       (str) The type of triangle
