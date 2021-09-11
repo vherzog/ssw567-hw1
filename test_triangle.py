@@ -8,6 +8,8 @@ class TestTriangles(unittest.TestCase):
     def testInputQuantity(self):
         with self.assertRaises(TypeError):
             classify_triangle(1, 2)
+        with self.assertRaises(TypeError):
+            classify_triangle(1, 2, 3, 4)
 
     def testInputValues(self):
         with self.assertRaises(ValueError):
