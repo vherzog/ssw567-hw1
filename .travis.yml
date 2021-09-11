@@ -4,4 +4,4 @@ python:
 
 # command to run tests
 script:
-  - cd HW00 && python -m unittest hello-test
+  - python -m unittest
