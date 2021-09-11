@@ -15,7 +15,7 @@ Python test code lives in `test_triangle.py`.
 5. Function returns whether triangle is `right`.
 
 ## Missing requirements/Assumptions
-* Input types must be integers.
+* Input types must be type `int`.
 * Sides must equal a *valid* triangle.
 * If sides make a `right` triangle, function returns `"<type> and Right"`
 * If requirements are not met, function raises a `ValueError`.
