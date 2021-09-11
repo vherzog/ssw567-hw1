@@ -14,8 +14,7 @@ python -m unittest -v
 1. Function takes 3 parameters.
 2. Function inputs represent the sides of a triangle.
 3. Function returns a string.
-4. Function returns whether triangle is `scalene`, `isosceles`, or `equilateral`.
-5. Function returns whether triangle is `right`.
+4. Function returns whether triangle is `scalene`, `isosceles`, or `equilateral` and whether triangle is `right`.
 
 ## Missing requirements/Assumptions
 * Input types can be type `int` or `float`.
