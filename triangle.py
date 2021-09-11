@@ -72,17 +72,16 @@ def classify_triangle(a, b, c):
     if not validate_triangle(a, b, c):
         type = "NotATriangle"
 
-    # print(f"Triangle type is: {type}")
     return type
 
 
 if __name__ == "__main__":
     # Examples of running the code
-    classify_triangle(1, 2, 3)
-    classify_triangle(10, 7, 9)
-    classify_triangle(5, 5, 5)
-    classify_triangle(5, 5, 8)
-    classify_triangle(3, 4, 5)
-    classify_triangle(1, 1, sqrt(2))
-    # classify_triangle(5, 5, "eight")
-    # classify_triangle(5, 5)
+    print(classify_triangle(1, 2, 3))
+    print(classify_triangle(10, 7, 9))
+    print(classify_triangle(5, 5, 5))
+    print(classify_triangle(5, 5, 8))
+    print(classify_triangle(3, 4, 5))
+    print(classify_triangle(1, 1, sqrt(2)))
+    # print(classify_triangle(5, 5, "eight"))
+    # print(classify_triangle(5, 5))
