@@ -7,11 +7,18 @@ Python source code lives in `triangle.py`.
 ### Test code
 Python test code lives in `test_triangle.py`.
 
-### Missing requirements
-* Input types? (Int, Float, String)
-* Requirements of triangle type are not complete
-  * Just because 2 of the 3 sides provided are equal, does not mean that the sides make an isosceles triangle
-  * You must first calculate that the sides provided make a VALID triangle
+## Acceptance Test Cases
+1. Function takes 3 parameters.
+2. Function inputs represent the sides of a triangle.
+3. Function returns a string.
+4. Function returns whether triangle is `scalene`, `isosceles`, or `equilateral`.
+5. Function returns whether triangle is `right`.
+
+## Missing requirements/Assumptions
+* Input types must be integers.
+* Sides must equal a *valid* triangle.
+* If sides make a `right` triangle, function returns `"<type> and Right"`
+* If requirements are not met, function raises a `ValueError`.
 
 
 ### Author: Veronica Herzog

@@ -4,6 +4,16 @@ import unittest
 
 
 class TestTriangles(unittest.TestCase):
+    def testInputQuantity(self):
+        with self.assertRaises(TypeError):
+            classify_triangle(1,2)
+
+    def testInputValues(self):
+        with self.assertRaises(ValueError):
+            classify_triangle("one", "two", "three")
+        with self.assertRaises(ValueError):
+            classify_triangle(1.5, 7, 9)
+            
     def testValidTriangles(self):
         self.assertEqual(classify_triangle(3, 4, 5), "Right", "3,4,5 should be right")
         self.assertEqual(
@@ -20,12 +30,6 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(
             classify_triangle(3, 4, 8), "NotATriangle", "3,4,8 is not a triangle"
         )
-
-    def testInvalidInputs(self):
-        with self.assertRaises(ValueError):
-            classify_triangle("one", "two", "three")
-        with self.assertRaises(ValueError):
-            classify_triangle(1.5, 7, 9)
 
 
 if __name__ == "__main__":

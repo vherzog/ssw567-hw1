@@ -61,7 +61,7 @@ def classify_triangle(a, b, c):
     elif a != b and b != c and a != c:
         type = "Scalene"
     if (a * a + b * b) == (c * c):
-        type = "Right"
+        type += " and Right"
 
     # Check that sides make a valid triangle
     if not validate_triangle(a, b, c):
@@ -77,4 +77,6 @@ if __name__ == "__main__":
     classify_triangle(10, 7, 9)
     classify_triangle(5, 5, 5)
     classify_triangle(5, 5, 8)
+    classify_triangle(3, 4, 5)
     # classify_triangle(5, 5, "eight")
+    # classify_triangle(5, 5)
