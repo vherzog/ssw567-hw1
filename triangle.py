@@ -72,7 +72,7 @@ def classify_triangle(a, b, c):
     if not validate_triangle(a, b, c):
         type = "NotATriangle"
 
-    print(f"Triangle type is: {type}")
+    # print(f"Triangle type is: {type}")
     return type
 
 

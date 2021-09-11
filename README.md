@@ -6,6 +6,9 @@ Python source code lives in `triangle.py`.
 
 ### Test code
 Python test code lives in `test_triangle.py`.
+```
+python -m unittest -v
+```
 
 ## Acceptance Test Cases
 1. Function takes 3 parameters.

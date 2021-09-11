@@ -14,6 +14,8 @@ class TestTriangles(unittest.TestCase):
     def testInputValues(self):
         with self.assertRaises(ValueError):
             classify_triangle("one", "two", "three")
+        with self.assertRaises(ValueError):
+            classify_triangle(1, "two", 3)
 
     def testOutputType(self):
         self.assertIsInstance(classify_triangle(1, 1, 1), str)
