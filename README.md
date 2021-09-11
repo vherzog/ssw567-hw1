@@ -25,7 +25,7 @@ python -m unittest -v
 I had difficulty testing for the case of `Isosceles and Right`. This would be triangles with sides of value `X`, `X`, `X*sqrt(2)`. Without rounding to a specific decimal, the `classify_triangle` function would not classify those side lengths as a `Right` triangle, only `Isosceles`. For this reason, I added an assumption that `Right` triangles would be calculated with precision to the fourth decimal.
 
 ## Testing Complete
-I determined my testing was considered `"Complete"` when my test cases met the provided acceptance criteria (see the four criteria listed in `Acceptance Critera`). I took these criteria from the Requirements Specification provided:
+I determined my testing was considered `"Complete"` when my test cases met the provided acceptance criteria (see the four criteria listed in `Acceptance Critera`). Each test case in `test_triangle.py` matches on of those criteria. I took these criteria from the Requirements Specification provided:
 ```
 “Write a function classify_triangle() that takes three  parameters: a, b, and c. The three parameters represent the lengths of the sides of a triangle. The function returns a string that specifies whether the triangle is scalene, isosceles, or equilateral, and whether it is a right triangle as well.”
 ```
