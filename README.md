@@ -15,3 +15,5 @@ Python test code lives in `test_triangle.py`.
 
 
 ### Author: Veronica Herzog
+
+[![Build Status](https://app.travis-ci.com/vherzog/ssw567.svg?branch=main)](https://app.travis-ci.com/vherzog/ssw567)
