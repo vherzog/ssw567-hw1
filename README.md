@@ -1,9 +1,9 @@
 # SSW567 HW01
 ## Source code
-Python source code lives in `triangle.py`.
+Python source code lives in [triangle.py](./triangle.py).
 
 ## Test code
-Python test code lives in `test_triangle.py`.
+Python test code lives in [test_triangle.py](./test_triangle.py).
 ```
 python -m unittest -v
 ```
