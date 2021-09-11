@@ -19,7 +19,10 @@ Python test code lives in `test_triangle.py`.
 * Sides must equal a *valid* triangle.
 * If sides make a `right` triangle, function returns `"<type> and Right"`
 * If requirements are not met, function raises a `ValueError`.
+* `Right` triangles are calculated with precision to the fourth decimal.
 
+## Issues
+I had difficulty testing for the case of `Isosceles and Right`. This would be triangles with sides of value `X`, `X`, `X*sqrt(2)`. Without rounding to a specific decimal, the `classify_triangle` function would not classify those side lengths as a `Right` triangle, only `Isosceles`. For this reason, I added an assumption that `Right` triangles would be calculated with precision to the fourth decimal.
 
 ### Author: Veronica Herzog
 

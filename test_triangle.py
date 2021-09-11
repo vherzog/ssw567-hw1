@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from triangle import classify_triangle
+from math import sqrt
 import unittest
 
 
@@ -11,8 +12,9 @@ class TestTriangles(unittest.TestCase):
     def testInputValues(self):
         with self.assertRaises(ValueError):
             classify_triangle("one", "two", "three")
-        with self.assertRaises(ValueError):
-            classify_triangle(1.5, 7, 9)
+
+    def testOutputType(self):
+        self.assertIsInstance(classify_triangle(1, 1, 1), str)
 
     def testOutputs(self):
         self.assertEqual(
@@ -21,9 +23,9 @@ class TestTriangles(unittest.TestCase):
             "3,4,5 should be scalene and right",
         )
         self.assertEqual(
-            classify_triangle(45, 45, 90),
+            classify_triangle(4, 4, 4*sqrt(2)),
             "Isosceles and Right",
-            "45,45,90 should be isosceles and right",
+            "4, 4, 4*sqrt(2) should be isosceles and right",
         )
         self.assertEqual(
             classify_triangle(1, 1, 1), "Equilateral", "1,1,1 should be equilateral"

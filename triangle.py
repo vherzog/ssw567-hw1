@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from math import sqrt
 
 
 def validate_inputs(a, b, c):
@@ -12,11 +13,11 @@ def validate_inputs(a, b, c):
      Returns:
        (bool) True if all sides are integers and/or floats, False if not.
     """
-    if (
-        not ((isinstance(a, int)) or (isinstance(a, float)))
-        or not ((isinstance(b, int)) or (isinstance(b, float)))
-        or not ((isinstance(c, int)) or (isinstance(c, float)))
-    ):
+    if not ((isinstance(a, int)) or (isinstance(a, float))):
+        return False
+    elif not ((isinstance(b, int)) or (isinstance(b, float))):
+        return False
+    elif not ((isinstance(c, int)) or (isinstance(c, float))):
         return False
     else:
         return True
@@ -64,7 +65,7 @@ def classify_triangle(a, b, c):
         type = "Isosceles"
     elif a != b and b != c and a != c:
         type = "Scalene"
-    if (a * a + b * b) == (c * c):
+    if round((a ** 2) + (b ** 2), 4) == round((c ** 2), 4):
         type += " and Right"
 
     # Check that sides make a valid triangle
@@ -82,5 +83,6 @@ if __name__ == "__main__":
     classify_triangle(5, 5, 5)
     classify_triangle(5, 5, 8)
     classify_triangle(3, 4, 5)
+    classify_triangle(1, 1, sqrt(2))
     # classify_triangle(5, 5, "eight")
     # classify_triangle(5, 5)
