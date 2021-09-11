@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.9"
+
+# command to run tests
+script:
+  - cd HW00 && python -m unittest hello-test
