@@ -1,10 +1,8 @@
 # SSW567 HW01
-## Deliverables
-
-### Source code
+## Source code
 Python source code lives in `triangle.py`.
 
-### Test code
+## Test code
 Python test code lives in `test_triangle.py`.
 ```
 python -m unittest -v
