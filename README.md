@@ -9,8 +9,8 @@ python -m unittest -v
 ```
 
 ## Acceptance Criteria
-1. Function takes 3 parameters.
-2. Function inputs represent the sides of a triangle.
+1. Function takes 3 inputs.
+2. Inputs represent the sides of a triangle.
 3. Function returns a string.
 4. Function returns whether triangle is `scalene`, `isosceles`, or `equilateral` and whether triangle is `right`.
 
